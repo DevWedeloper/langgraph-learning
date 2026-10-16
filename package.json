@@ -1,0 +1,31 @@
+{
+  "name": "langgraph-learning",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A hands-on playground for learning LangChain + LangGraph in TypeScript",
+  "scripts": {
+    "01:llm": "tsx src/01-basics/simple-llm-call.ts",
+    "01:prompt": "tsx src/01-basics/prompt-templates.ts",
+    "01:chain": "tsx src/01-basics/chains-lcel.ts",
+    "02:tool": "tsx src/02-tools/custom-tool.ts",
+    "02:toolcall": "tsx src/02-tools/tool-calling.ts",
+    "03:basic": "tsx src/03-langgraph/basic-graph.ts",
+    "03:router": "tsx src/03-langgraph/conditional-routing.ts",
+    "03:agent": "tsx src/03-langgraph/agent-with-tools.ts",
+    "04:memory": "tsx src/04-memory/persistent-memory.ts",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.42",
+    "@langchain/langgraph": "^0.2.44",
+    "@langchain/openai": "^0.4.4",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.13.5"
+  }
+}
